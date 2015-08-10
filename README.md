@@ -38,9 +38,9 @@ At runtime, specify the override you want to use ( eg, HeapSize ):
 ### Add my own dynamic variables?
 The Entrypoint script ( _hybris-wrapper.sh_ ) on first execution will iterate through all the ENV variables starting with "HYB-" and replace the corresponding value @HYB-VARIABLE@ in the local.properties. To add your own, simply add an ENV line to the Dockerfile with the variables you want to replace, and put place-holders for those variables in the form of the same name in the local.properties.
   - Example Dockerfile line:
-  > ENV HYB-CLUSTER-ID=0
+        ENV HYB-CLUSTER-ID=0
   - Example local.properties entry:
-  > cluster.id=@HYB-CLUSTER-ID@
+        cluster.id=@HYB-CLUSTER-ID@
 
 ### Keep all of this organized?!
 There are many docker management solutions. A preferred method is to document your operational, infrastructure, release requirements and use-cases and evaluate the various solutions against them. Below is a short list of popular solutions.
