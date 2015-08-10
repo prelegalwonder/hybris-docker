@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ -f /opt/hybris/.configured ]
+if [ -f /opt/hybris/current/.configured ]
   then
     true
 else 
@@ -17,6 +17,7 @@ else
   cd /opt/hybris/current/hybris/bin/platform
   . ./setantenv.sh
   ant server
+  touch /opt/hybris/current/.configured
 fi
 
 /opt/hybris/current/hybris/bin/platform/hybrisserver.sh
