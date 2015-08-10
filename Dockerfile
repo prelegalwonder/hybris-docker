@@ -35,6 +35,8 @@ RUN mkdir -p /opt/hybris/5.4.0.4 && \
 ## Run Initial Ant ##
 RUN cd /opt/hybris/current/hybris/bin/platform && \
     . ./setantenv.sh && \
+    #Wait for unzip to release ant
+    sleep 1 && \
     yes  | ant
 
 ## Copy in License File##

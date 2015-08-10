@@ -5,7 +5,7 @@ This repo is an attempt to dockerize the SAP H[y]bris ecommerce platform for the
 <br>In order to make this production ready, you will need to revise it according to your needs. If you have any questions about how to apply those needs via Docker, feel free to open an issue on this repo and I'll make my best effort to assist.
 
 ## Requirements
-- Access to the [Hybris Wiki](wiki.hybris.com) and or media.
+- Access to the [Hybris Wiki](http://wiki.hybris.com) and or media.
 - A recent version of docker [installed on a host](https://docs.docker.com/installation/).
 - A user on that host with docker access (*root or a user in the docker group*).
 - [Sufficient host resources](https://wiki.hybris.com/display/general/System+Requirements+-+Release+5.4).
